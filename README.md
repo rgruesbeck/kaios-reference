@@ -94,9 +94,29 @@ zip -r package.zip src
 https://zserge.com/posts/my-experience-with-asmjs/
 
 ## Talks
-[Google IO: Next Billion Users](https://www.youtube.com/watch?v=ak6Uj02DTjk)
+- [Google IO: Next Billion Users](https://www.youtube.com/watch?v=ak6Uj02DTjk)
+- [Google IO: Proxx Game](https://youtu.be/w8P5HLxcIO4)
+- [Firefox OS is back. on KaiOS](https://youtu.be/_UPk3mpcDP4)
+
+## Example App: Proxx
+https://proxx.app/ (by google)
+
+Specs:
+- Initial Payload < 25k
+- Time to interactive < 5 sec on slow 3G
+- 60 fps
+- [Preact](https://preactjs.com/)
+- [Comlink](https://github.com/GoogleChromeLabs/comlink)
+- Accessiblity with [tabindex](https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex) (checkout https://web.dev/accessible/)
+- [Number keys in UX](https://youtu.be/w8P5HLxcIO4?t=1720)
+- [Travis size report](https://github.com/GoogleChromeLabs/travis-size-report)
+
+## Permission Table (mnt Smart)
+https://gist.github.com/rgruesbeck/04a5380a60eb325abfe9ee25e4d46f9b
 
 ## Devices
-- [Devices](https://www.kaiostech.com/explore/devices/)
+- Low End: MTN Smart S
+- High End: Nokia 8110
+- [Device List](https://www.kaiostech.com/explore/devices/)
 - [MTN phones](https://simbatelecom.com/product/mtn-kamunye/)
 - [KaiOS USA prepaid phones](https://www.bestbuy.com/site/searchpage.jsp?_dyncharset=UTF-8&browsedCategory=pcmcat158500050014&id=pcat17071&iht=n&ks=960&list=y&qp=operatingsystem_facet%3DOperating%20System~KaiOS&sc=Global&st=categoryid%24pcmcat158500050014&type=page&usc=All%20Categories)
