@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "name": "KaiOS App",
+  "description": "A file simple example manifest.webapp",
+  "subtitle": "App subtitle in app store",
+  "type": "privileged",
+  "categories": [
+    "utilities"
+  ],
+  "launch_path": "/index.html",
+  "icons": {
+    "56": "/icons/ic_Appname_56.png",
+    "112": "/icons/ic_Appname_112.png"
+  },
+  "developer": {
+    "name": "Your Name",
+    "url": "http://kaiostech.com"
+  },
+  "locales": {
+    "en-US": {
+      "name": "KaiOS App",
+      "subtitle": "Short description for the user",
+      "description": "Brief description of your app"
+    }
+  },
+  "default_locale": "en-US",
+  "permissions": {
+  "contacts": {
+    "description": "Required for autocompletion in the share screen",
+    "access": "readcreate"
+    },
+  "alarms": {
+    "description": "Required to schedule notifications"
+  }
+}
+}

@@ -1,0 +1,27 @@
+{
+    "name": "hello-world",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npx parcel watch src/index.html",
+        "build": "npx parcel build src/index.html",
+        "postbuild": "zip -r -9 package.zip dist",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "staticFiles": {
+        "staticPath": [
+            "src"
+        ]
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "preact": "^10.4.0"
+    },
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4",
+        "parcel-plugin-static-files-copy": "^2.3.1",
+        "typescript": "^3.8.3"
+    }
+}
