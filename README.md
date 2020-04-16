@@ -1,12 +1,16 @@
-# KaiOS Notes
+# KaiOS Reference
 
 ## Setup
 1. Download [Firefox <= v59](https://ftp.mozilla.org/pub/firefox/releases/)
 2. Keep Firefox from updating with [policies.json](https://github.com/mozilla/policy-templates) OR setting [preferences](about:preferences) to "never check for updates"
 3. Install [ADB](https://developer.android.com/studio/command-line/adb)
 
+## Debug Mode
+Dial `*#*#33284#*#*` to enter debug mode.
+- if the code dosn't work see [other options](https://sites.google.com/view/bananahackers/development/debug-mode)
 
 ## Manifest
+The app manifest file describes the entrypoint and other information about your app to KaiOS.
 
 ## App Icons
 https://developer.kaiostech.com/design-guide/launcher-icon
@@ -31,10 +35,30 @@ kaios
 ```
 
 ## ADB
+### Install
+#### OSX
+Should be no configuration.
+#### Linux
+- Debian/Ubuntu based distors follow [KaiOS Docs](https://developer.kaiostech.com/getting-started/env-setup/os-env-setup)
+- RPM & Arch based linux distros should follow instruction on the [arch wiki](https://wiki.archlinux.org/index.php/Android_Debug_Bridge)
+- Make sure you have installed adb, setup udev rules, and added user to the appropriate adb group.
+
 ### List Devices
 ```sh
 adb devices
 ```
+
+### Troubleshooting
+Sometimes linux report no adb permisions on device.
+Try reseting the udev rules, and restarting the adb server
+```sh
+sudo udevadm control --reload-rules
+sudo adb kill-server
+sudo adb start-server
+adb devices
+```
+
+
 ### Enter shell on device
 ```sh
 adb shell
@@ -73,6 +97,22 @@ Trace userspace process with `atrace`
 ```sh
 atrace
 ```
+
+### adb over wifi
+Connect to devices over wifi
+With device plugged in, set device to listen for TCP/IP connections on port 5555
+```sh
+adb tcpip 5555
+```
+Unplug device, and connect to device over network
+```sh
+adb connect <device ip>
+```
+Confirm device is connected
+```sh
+adb devices
+```
+Read more [here](https://developer.android.com/studio/command-line/adb#wireless)
 
 
 ## Docs
