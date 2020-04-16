@@ -7,7 +7,7 @@
 
 ## Debug Mode
 Dial `*#*#33284#*#*` to enter debug mode.
-- if the code dosn't work see [other options](https://sites.google.com/view/bananahackers/development/debug-mode)
+If this code dosn't work see [other options](https://sites.google.com/view/bananahackers/development/debug-mode) depending on your device.
 
 ## Manifest
 The app manifest file describes the entrypoint and other information about your app to KaiOS.
@@ -114,11 +114,14 @@ adb devices
 ```
 Read more [here](https://developer.android.com/studio/command-line/adb#wireless)
 
+## Keypad
+![keypad legend](nokia_8110_keypad.png)
 
 ## Docs
 - [KaiOS Docs](https://developer.kaiostech.com/)
 - [KaiOS Solutions](https://support.kaiostech.com/en/support/solutions)
 - [Jio Docs](http://www.jiodevelopers.com/developer-portal/)
+- [Banana Hackers](https://sites.google.com/view/bananahackers/)
 
 ## Notes
 - [Google Assistant on feature phones](https://developers.google.com/assistant/surfaces/feature-entry-level-phones)
@@ -139,7 +142,7 @@ https://zserge.com/posts/my-experience-with-asmjs/
 - [Firefox OS is back. on KaiOS](https://youtu.be/_UPk3mpcDP4)
 
 ## Example App: Proxx
-https://proxx.app/ (by google)
+[Proxx](https://proxx.app/) (by google)
 
 Specs:
 - Initial Payload < 25k
@@ -151,12 +154,16 @@ Specs:
 - [Number keys in UX](https://youtu.be/w8P5HLxcIO4?t=1720)
 - [Travis size report](https://github.com/GoogleChromeLabs/travis-size-report)
 
-## Permission Table (mnt Smart)
-https://gist.github.com/rgruesbeck/04a5380a60eb325abfe9ee25e4d46f9b
-
 ## Devices
 - Low End: MTN Smart S
 - High End: Nokia 8110
 - [Device List](https://www.kaiostech.com/explore/devices/)
 - [MTN phones](https://simbatelecom.com/product/mtn-kamunye/)
 - [KaiOS USA prepaid phones](https://www.bestbuy.com/site/searchpage.jsp?_dyncharset=UTF-8&browsedCategory=pcmcat158500050014&id=pcat17071&iht=n&ks=960&list=y&qp=operatingsystem_facet%3DOperating%20System~KaiOS&sc=Global&st=categoryid%24pcmcat158500050014&type=page&usc=All%20Categories)
+
+## Permission Table
+- [MTN Smart](https://gist.github.com/rgruesbeck/04a5380a60eb325abfe9ee25e4d46f9b)
+
+
+## Release Calendar
+Mozilla [will be supporting](https://www.kaiostech.com/press/kaios-technologies-and-mozilla-partner-to-enable-a-healthy-mobile-internet-for-everyone/) KaiOS begining with Firefox ESR (Extend Support Release) 78, scheduled for realease on [June 30th 2020](https://wiki.mozilla.org/Release_Management/Calendar).
